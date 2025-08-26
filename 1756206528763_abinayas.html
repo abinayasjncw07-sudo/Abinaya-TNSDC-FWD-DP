@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S. Abinaya - Portfolio</title>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for gradients and font */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-image: linear-gradient(to bottom right, #1a237e, #4527a0, #673ab7);
+            background-attachment: fixed;
+        }
+
+        /* Custom scrollbar for better aesthetics */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #1a237e;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #673ab7;
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #7e57c2;
+        }
+
+        /* Hero section specific styles */
+        .hero-section {
+            background-color: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body class="text-white">
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section flex flex-col items-center justify-center min-h-screen p-8 text-center rounded-b-3xl">
+        <div class="relative w-40 h-40 md:w-48 md:h-48 mb-8">
+            <!-- Profile image placeholder with a vibrant border -->
+            <img src="https://placehold.co/192x192/4a148c/ffffff?text=ABINAYA" alt="S. Abinaya" class="w-full h-full rounded-full border-4 border-fuchsia-400 object-cover shadow-2xl transition-transform duration-500 hover:scale-105">
+            <div class="absolute -bottom-2 -right-2 bg-pink-500 text-white rounded-full text-xs font-semibold px-2 py-1 transform rotate-12">
+                Student
+            </div>
+        </div>
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-2 leading-tight drop-shadow-lg">S. Abinaya</h1>
+        <p class="text-xl sm:text-2xl font-light text-gray-200 mb-8 drop-shadow-md">Computer Science Department</p>
+        <p class="max-w-xl text-lg text-gray-300">
+            A passionate and dedicated computer science student from the Naan Mudhalvan program, skilled in software development and problem-solving.
+        </p>
+        <div class="mt-8">
+            <a href="#projects" class="inline-block bg-fuchsia-600 hover:bg-fuchsia-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg transform transition-transform duration-300 hover:scale-105">
+                View My Projects
+            </a>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-20 px-4 md:px-8 lg:px-16 container mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-10 text-center text-fuchsia-400">About Me</h2>
+        <div class="max-w-4xl mx-auto bg-white/5 rounded-3xl p-8 md:p-12 shadow-2xl border border-white/10">
+            <p class="text-lg text-gray-200 leading-relaxed mb-6">
+                I am a motivated and results-oriented computer science student with a strong foundation in programming languages and software development principles. I am constantly seeking to expand my knowledge and apply my skills to real-world challenges. My focus is on creating efficient, clean, and well-documented code.
+            </p>
+            <p class="text-lg text-gray-200 leading-relaxed">
+                As a participant in the Naan Mudhalvan initiative, I have enhanced my technical and soft skills, preparing me for a successful career in the IT industry. I am a quick learner, a collaborative team player, and I thrive in dynamic environments.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 px-4 md:px-8 lg:px-16 container mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-10 text-center text-fuchsia-400">Skills</h2>
+        <div class="max-w-4xl mx-auto flex flex-wrap justify-center gap-4">
+            <!-- Skill Badges -->
+            <div class="skill-badge bg-fuchsia-600 text-white rounded-full px-6 py-2 shadow-lg transition-transform duration-200 hover:scale-105">HTML & CSS</div>
+            <div class="skill-badge bg-violet-600 text-white rounded-full px-6 py-2 shadow-lg transition-transform duration-200 hover:scale-105">JavaScript</div>
+            <div class="skill-badge bg-indigo-600 text-white rounded-full px-6 py-2 shadow-lg transition-transform duration-200 hover:scale-105">Python</div>
+            <div class="skill-badge bg-pink-600 text-white rounded-full px-6 py-2 shadow-lg transition-transform duration-200 hover:scale-105">Data Structures</div>
+            <div class="skill-badge bg-fuchsia-600 text-white rounded-full px-6 py-2 shadow-lg transition-transform duration-200 hover:scale-105">SQL</div>
+            <div class="skill-badge bg-violet-600 text-white rounded-full px-6 py-2 shadow-lg transition-transform duration-200 hover:scale-105">Problem Solving</div>
+            <div class="skill-badge bg-indigo-600 text-white rounded-full px-6 py-2 shadow-lg transition-transform duration-200 hover:scale-105">Git & GitHub</div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-4 md:px-8 lg:px-16 container mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-10 text-center text-fuchsia-400">Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <!-- Project Card 1 -->
+            <div class="project-card bg-white/5 rounded-3xl p-6 shadow-2xl transform transition-transform duration-300 hover:scale-105 border border-white/10">
+                <img src="https://placehold.co/600x400/2a0e44/ffffff?text=Project+1" alt="Project 1" class="w-full rounded-2xl mb-4">
+                <h3 class="text-2xl font-semibold mb-2 text-fuchsia-300">Web Development Project</h3>
+                <p class="text-gray-300 mb-4">
+                    A responsive website built using HTML, CSS, and JavaScript. This project focused on user interface design and front-end interactivity.
+                </p>
+                <a href="#" class="text-violet-400 hover:text-violet-300 font-medium">Learn More &rarr;</a>
+            </div>
+
+            <!-- Project Card 2 -->
+            <div class="project-card bg-white/5 rounded-3xl p-6 shadow-2xl transform transition-transform duration-300 hover:scale-105 border border-white/10">
+                <img src="https://placehold.co/600x400/2a0e44/ffffff?text=Project+2" alt="Project 2" class="w-full rounded-2xl mb-4">
+                <h3 class="text-2xl font-semibold mb-2 text-fuchsia-300">Python Data Analysis</h3>
+                <p class="text-gray-300 mb-4">
+                    A data analysis project using Python to process and visualize data from a public dataset. Utilized libraries like Pandas and Matplotlib.
+                </p>
+                <a href="#" class="text-violet-400 hover:text-violet-300 font-medium">Learn More &rarr;</a>
+            </div>
+
+            <!-- Project Card 3 -->
+            <div class="project-card bg-white/5 rounded-3xl p-6 shadow-2xl transform transition-transform duration-300 hover:scale-105 border border-white/10">
+                <img src="https://placehold.co/600x400/2a0e44/ffffff?text=Project+3" alt="Project 3" class="w-full rounded-2xl mb-4">
+                <h3 class="text-2xl font-semibold mb-2 text-fuchsia-300">Simple Game Development</h3>
+                <p class="text-gray-300 mb-4">
+                    Developed a classic arcade game using HTML Canvas and JavaScript. Focused on game logic, animation loops, and user input handling.
+                </p>
+                <a href="#" class="text-violet-400 hover:text-violet-300 font-medium">Learn More &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-4 md:px-8 lg:px-16 container mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-10 text-center text-fuchsia-400">Get in Touch</h2>
+        <div class="max-w-2xl mx-auto text-center bg-white/5 rounded-3xl p-8 md:p-12 shadow-2xl border border-white/10">
+            <p class="text-lg text-gray-200 mb-6">
+                I am actively seeking internship opportunities and collaborations. Feel free to reach out to me via email.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="mailto:abinayasjncw07@gmail.com" class="bg-gradient-to-r from-fuchsia-500 to-violet-600 text-white font-semibold py-3 px-8 rounded-full shadow-lg transform transition-transform duration-300 hover:scale-105">
+                    Email Me
+                </a>
+                <button id="copy-email-btn" class="bg-gray-800 text-gray-300 hover:bg-gray-700 py-3 px-8 rounded-full shadow-lg transform transition-transform duration-300 hover:scale-105">
+                    Copy Email
+                </button>
+            </div>
+            <div id="copy-message" class="mt-4 text-green-400 text-sm hidden">
+                Email address copied to clipboard!
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 text-center text-gray-400 text-sm">
+        <p>&copy; 2024 S. Abinaya. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for smooth scrolling and copy functionality -->
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Copy email to clipboard functionality
+        const copyEmailBtn = document.getElementById('copy-email-btn');
+        const copyMessage = document.getElementById('copy-message');
+        const emailToCopy = 'abinayasjncw07@gmail.com';
+
+        copyEmailBtn.addEventListener('click', function() {
+            // Create a temporary textarea element to hold the text
+            const tempInput = document.createElement('textarea');
+            tempInput.value = emailToCopy;
+            document.body.appendChild(tempInput);
+
+            // Select and copy the text
+            tempInput.select();
+            tempInput.setSelectionRange(0, 99999); /* For mobile devices */
+            try {
+                document.execCommand('copy');
+                copyMessage.classList.remove('hidden');
+                setTimeout(() => {
+                    copyMessage.classList.add('hidden');
+                }, 3000);
+            } catch (err) {
+                console.error('Failed to copy text: ', err);
+            }
+
+            // Clean up by removing the temporary element
+            document.body.removeChild(tempInput);
+        });
+    </script>
+
+</body>
+</html>
